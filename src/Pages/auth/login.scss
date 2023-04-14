@@ -1,0 +1,159 @@
+
+.login{
+ background-color: var(--bg-main-color);
+ width: 100%;
+ height: 100vh;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+
+ >section{
+    width: 70%;
+    background-color: var(--bg-main-color);
+    box-shadow: 0px 0px 10px 5px rgb(0, 0, 0, 0.09);
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    >aside{
+        padding: 0rem 1rem;
+        flex: 1;
+        img{
+         width: 100%;
+        }
+    }
+    >div{
+        flex: 1;
+        >section{
+            padding: 0rem 1rem;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+          img{
+            width: 50%;   
+            margin: 1rem 0rem;
+        }
+         h2{
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin: 0.6rem 0rem;
+            font-style: italic;
+            color: var(--text-main-color);
+            span{
+               color: var(--primary-color);
+               font-weight: bolder;
+            }
+         }
+         button{
+            margin-top: 0.7rem;
+            width: 100%;
+            background-color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            padding: 0%;
+        
+           P{
+            margin-top: 0.3rem;
+              svg{
+               font-size: 1.5rem;
+                margin: 0.2rem 0.3rem;
+              }
+           }  
+           span{
+            font-size: 1rem;
+            font-style: italic;
+        
+           }   
+         }
+        }
+    }
+ }
+}
+
+@media only screen and (max-width: 950px){
+ .login{
+   >section{
+      width: 80%;
+   }
+ }
+}
+@media only screen and (max-width: 700px){
+ .login{
+   >section{
+      width: 80%;
+    
+      >aside{
+          padding: 0rem 0.5rem;
+      }
+      >div{
+          flex: 1;
+          >section{
+              padding: 0rem 0.5rem;
+           h2{
+              font-size: 1rem;
+           }
+         
+          }
+      }
+   }
+ }
+}
+
+@media only screen and (max-width: 680px){
+   .login{
+      >section{
+         width: 90%;
+         >div{
+          >section{
+            button{
+               margin-top: 0.7rem;
+              P{
+               margin-top: 0.3rem;
+                 svg{
+                  font-size: 1.3rem;
+                   margin: 0.2rem 0.3rem;
+                 }
+              }  
+              span{
+               font-size: 0.8rem;
+               font-style: italic;
+           
+              }   
+            }
+          }
+         }
+      }
+   }
+}
+
+@media only screen and (max-width: 500px){
+ .login{
+   >section{
+      width: 70%;
+      flex-direction: column;
+      gap:0rem;
+      padding: 3rem 1rem;
+      >aside{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+         img{
+          width: 90%;
+         }
+     }
+
+      >div{
+         >section{
+           img{ 
+             margin: 0.6rem 0rem;
+         }
+          h2{
+             margin: 0.5rem 0rem;
+          }
+          button{
+             margin-top: 0.5rem; 
+          }
+         }
+     }
+   }
+ }
+}

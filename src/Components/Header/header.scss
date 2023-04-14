@@ -1,0 +1,186 @@
+
+.header-1 {
+  width: 100%;
+  background-color: var(--bg-main-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow-x: hidden;
+  border-bottom: 1px solid rgb(0, 0, 0, 0.19);
+  > div {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    section {
+      display: flex;
+      align-items: center;
+      > img {
+        width: 4rem;
+        cursor: pointer;
+        object-fit: contain;
+      }
+      > h3 {
+        font-size: 2rem;
+        color: var(--text-main-color);
+      }
+    }
+    h2 {
+      margin-right: 2rem;
+      font-size: 1.5rem;
+      color: var(--text-main-color);
+      font-family:"Raleway', sans-serif";
+    }
+    div {
+      margin-right: 1rem;
+      background-color: var(--text-main-color);
+      border-radius: 50%;
+      width: 1.5rem;
+      height: 1.5rem;
+      padding: 0.2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      svg {
+        font-size: 1.5rem;
+        color: var(--bg-main-color);
+        cursor: pointer;
+      }
+    }
+    span {
+      margin-right: 1rem;
+
+      img {
+        width: 2rem;
+        height: 2rem;
+        object-fit: contain;
+        border-radius: 50%;
+        border: 1px solid var(--text-main-color);
+      }
+    }
+    > svg {
+      margin-right: 1rem;
+      font-size: 2rem;
+      color: var(--text-main-color);
+      cursor: pointer;
+    }
+  }
+}
+.header-2 {
+  background-color: var(--bg-main-color);
+  width: 90%;
+  padding: 0.2rem 0rem;
+  display: flex;
+  div {
+    margin: 0.5rem 0rem;
+    padding: 0rem 2rem;
+  }
+}
+
+.breadCrums {
+  background-color: var(--text-main-color);
+  padding: 0.3rem 0.5rem;
+  text-decoration: none;
+  color: var(--bg-main-color);
+  border-radius: 5px;
+  font-size: 1rem;
+}
+.MuiBreadcrumbs-separator {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 0.5rem 0rem;
+  display: inline-block;
+  color: var(--text-main-color);
+}
+
+@media only screen and (max-width: 600px) {
+  .header-1 {
+    > div {
+      padding: 0.7rem;
+      section {
+        > img {
+          width: 2.5rem;
+         
+        }
+      }
+      h2 {
+        margin-right: 0.6rem;
+        font-size: 1rem;
+      }
+      div {
+        margin-right: 0.6rem;
+        width: 1.2rem;
+        height: 1.2rem;
+        padding: 0.2rem;
+        svg {
+          font-size: 1.1rem;
+        }
+      }
+      span {
+        margin-right: 0.6rem;
+
+        img {
+          width: 1.6rem;
+          height: 1.6rem;
+        }
+      }
+      > svg {
+        margin-right: 0.6rem;
+        font-size: 1.5rem;
+      }
+    }
+  }
+  .header-2{
+    div{
+      padding: 0rem 0.5rem;
+    }
+  }
+  .breadCrums {
+    padding: 0.3rem 0.3rem;
+    font-size: 0.6rem;
+  }
+  .MuiBreadcrumbs-separator {
+    font-size: 1.4rem;
+    text-align: center;
+    margin: 0.3rem 0rem;
+    display: inline-block;
+    color: var(--text-main-color);
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .header-1 {
+    > div {
+      padding: 0.7rem;
+      section {
+        > img {
+          width: 2.3rem;
+        }
+      }
+      h2 {
+        margin-right: 0.5rem;
+        font-size: 0.7rem;
+      }
+      div {
+        margin-right: 0.5rem;
+        width: 0.9rem;
+        height: 0.9rem;
+        padding: 0.2rem;
+        svg {
+          font-size: 0.8rem;
+        }
+      }
+      span {
+        margin-right: 0.5rem;
+
+        img {
+          width: 1.3rem;
+          height: 1.3rem;
+        }
+      }
+      > svg {
+        margin-right: 0.5rem;
+        font-size: 1.3rem;
+      }
+    }
+  }
+}
